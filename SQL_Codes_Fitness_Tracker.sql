@@ -9,7 +9,7 @@ Used T-SQL to create views and utilized these views to build a semantic model fo
 --CREATE VIEW fact_data AS
 
 SELECT *
-, CASE WHEN Steps >= 5800 THEN 'Yes' ELSE 'No' END AS ConsistencyTag
+, CASE WHEN Steps >= 6000 THEN 'Yes' ELSE 'No' END AS ConsistencyTag
 /*Created a conditional column for visualization 
 because we can't create a calculated column using DAX in a semantic model.*/
 
@@ -41,8 +41,8 @@ FROM CTE;
 
 /*Created a view in the Data Warehouse from the Lakehouse for the last_3_months dimension table..*/
 
---DROP VIEW last_3_months;
---CREATE VIEW last_3_months AS
+--DROP VIEW last_4_months;
+--CREATE VIEW last_4_months AS
 
 WITH CTE1 AS (
 SELECT Date 
@@ -59,4 +59,4 @@ SELECT *
 , ROW_NUMBER() OVER(ORDER BY YearMonth DESC) AS rn
 FROM CTE2
 )
-SELECT YearMonth, MonthName FROM CTE3 WHERE rn <= 3;
+SELECT YearMonth, MonthName FROM CTE3 WHERE rn <= 4;
