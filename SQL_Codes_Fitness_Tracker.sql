@@ -1,4 +1,4 @@
-/*Denormalized flat file from the Fabric Lakehouse to the Data Warehouse. 
+/*Normalized flat file from the Fabric Lakehouse to the Data Warehouse. 
 Used T-SQL to create views and utilized these views to build a semantic model for the Power BI report.*/
 
 ------------------------------------------------------------------------------------------------------
