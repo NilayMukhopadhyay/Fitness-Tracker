@@ -3,6 +3,6 @@ I started walking to get fit, but consistency was a problem. Then, a friend sugg
 
 This project was born out of my personal fitness goals. I hope you enjoy browsing it as much as I enjoyed making it.
 
-[**Please click here to see my crsip blog on Maven Showcase platform to see my end-to-end approach**] (https://mavenanalytics.io/project/12232)
+[**Please click here to see my crsip blog on Maven Showcase platform to see my end-to-end approach**](https://mavenanalytics.io/project/12232)
 
 **Tools used:** Google Sheets, Power BI, T-SQL, Dataflow Gen2, and Data Factory.
