@@ -39,7 +39,7 @@ FROM CTE;
 
 ------------------------------------------------------------------------------------------------------
 
-/*Created a view in the Data Warehouse from the Lakehouse for the last_3_months dimension table..*/
+/*Created a view in the Data Warehouse from the Lakehouse for the last_4_months dimension table..*/
 
 --DROP VIEW last_4_months;
 --CREATE VIEW last_4_months AS
